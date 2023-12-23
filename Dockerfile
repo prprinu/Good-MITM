@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM rust:1.61.0-buster AS build
+FROM --platform=amd64 rust:1.61.0-buster AS build
 
 ARG TARGETARCH
 
