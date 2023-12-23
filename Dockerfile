@@ -1,6 +1,6 @@
 FROM --platform=amd64 rust:1.61.0-buster AS build
 
-ARG TARGETARCH
+ARG amd64
 
 RUN apt-get update && apt-get install -y build-essential curl musl-tools upx pkg-config libssl-dev
 
